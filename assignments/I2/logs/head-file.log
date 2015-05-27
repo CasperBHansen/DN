@@ -1,0 +1,6 @@
+HTTP/1.0 200 SERVER MESSAGE
+Server: datanet/1.0a
+Date: Thu, 15 May 2014 22:59:28 GMT
+Content-Type: text/plain
+Content-Length: 60
+Connection: close

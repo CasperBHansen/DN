@@ -1,0 +1,9 @@
+HTTP/1.0 404 SERVER MESSAGE
+Server: datanet/1.0a
+Date: Thu, 15 May 2014 23:23:41 GMT
+Content-Type: text/html
+Content-Length: 260
+Connection: close
+
+<html><head><title>404 - Not Found</title></head><body><ul><li><a href="../">../</a></li><li><a href="test/">test/</a></li><li><a href="./">./</a></li><li><a href="sample.txt">sample.txt</a></li><li><a href="_index.html">_index.html</a></li></ul></body></html>
+

@@ -1,0 +1,11 @@
+traceroute to ftp.dk.debian.org (130.225.254.116), 30 hops max, 60 byte packets
+ 1  * * *
+ 2  192.168.1.1 (192.168.1.1)  2.390 ms  3.050 ms  4.316 ms
+ 3  95.166.146.1 (95.166.146.1)  23.476 ms  23.707 ms  24.049 ms
+ 4  ae12.mr5.hoer.dk.ip.fullrate.dk (90.185.4.86)  27.199 ms  27.110 ms  26.996 ms
+ 5  ae7.mr1.vby.dk.ip.fullrate.dk (90.185.4.241)  27.742 ms  28.268 ms  30.166 ms
+ 6  ae6.mr1.fb.dk.ip.fullrate.dk (90.185.5.81)  26.537 ms  29.747 ms  29.065 ms
+ 7  xe-3-0-0-0.boanqp7.dk.ip.tdc.net (195.215.109.229)  27.682 ms  21.897 ms  23.054 ms
+ 8  te-dix.ly0.core.fsknet.dk (192.38.7.1)  24.600 ms  22.870 ms  23.429 ms
+ 9  130.226.249.194 (130.226.249.194)  31.864 ms  31.770 ms  32.246 ms
+10  kvaser.dotsrc.org (130.225.254.116)  32.534 ms  31.577 ms  32.237 ms

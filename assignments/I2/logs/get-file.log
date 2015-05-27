@@ -1,0 +1,9 @@
+HTTP/1.0 200 SERVER MESSAGE
+Server: datanet/1.0a
+Date: Thu, 15 May 2014 23:12:52 GMT
+Content-Type: text/plain
+Content-Length: 60
+Connection: close
+
+This is a sample text file.
+The content type is plain/text.

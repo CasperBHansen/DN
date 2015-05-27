@@ -1,0 +1,78 @@
+\documentclass{acm_proc_article-sp}
+
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+
+\lstset
+{
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,
+    breaklines=true,
+    frame=single,
+    inputencoding=utf8,
+    language=bash,
+    numbers=left
+}
+
+\newcommand{\code}[1]{{\tt #1}}
+\newcommand{\prog}[1]{{\tt #1}}
+
+\newcommand{\secref}[1]{(see section \ref{#1})}
+\newcommand{\figref}[1]{(see figure~\ref{#1})}
+
+\begin{document}
+
+\title{Datanet Assignment 3}
+\subtitle{Kaskade: A P2P file sharing network}
+
+\numberofauthors{1}
+\author{
+    \alignauthor
+    Casper B. Hansen\\
+    \affaddr{University of Copenhagen}\\
+    \affaddr{2100 Universitetsparken 5}\\
+    \affaddr{Copenhagen, Denmark}\\
+    \email{fvx507@alumni.ku.dk}
+}
+
+\date{\today}
+
+\maketitle
+\begin{abstract}
+    ...
+\end{abstract}
+
+% A category with the (minimum) three required fields
+% \category{H.4}{Information Systems Applications}{Miscellaneous}
+% A category including the fourth, optional field follows...
+% \category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+
+\terms{}
+\keywords{Web, Server, Protocol}
+
+\section{Overview}
+\label{sec:overview}
+...
+
+\begin{tabular}{ll}
+    {\bf Key}     & Value \\
+\end{tabular}
+
+...
+
+\balancecolumns
+\bibliographystyle{abbrv}
+\bibliography{sigproc}
+\begin{thebibliography}{9}
+    
+    \bibitem{KR}
+        James F. Kurose, Keith W. Ross,\\
+        \emph{Computer Networking, A Top-Down Approach},\\
+        Pearson Education, Sixth Edition, 2013
+    
+\end{thebibliography}
+
+\end{document}
+

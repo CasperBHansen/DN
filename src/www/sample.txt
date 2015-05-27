@@ -1,0 +1,2 @@
+This is a sample text file.
+The content type is plain/text.

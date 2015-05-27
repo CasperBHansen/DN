@@ -1,0 +1,157 @@
+\documentclass[prodmode,acmtoit]{acmsmall}
+
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+
+\newcommand{\code}[1]{{\tt #1}}
+\newcommand{\prog}[1]{{\tt #1}}
+
+\acmVolume{V}
+\acmNumber{N}
+\acmArticle{A}
+\acmYear{2014}
+\acmMonth{4}
+
+\markboth{Casper B. Hansen (fvx507)}{Individual Assignment 1}
+
+\title{Datanet | Individual Assignment 1}
+
+\author{CASPER B. HANSEN (FVX507) \affil{University of Copenhagen}}
+
+\begin{abstract}
+    An overview of the basic tools used for analyzing the behaviour of network
+    systems. In a practical approach by experimenting with these tools we lead
+    into a discussion of more theoretical topics in network technologies.
+\end{abstract}
+
+% \category{}{}{}
+
+\terms{Experimentation, Measurement}
+\keywords{Network, Tools}
+\acmformat{Casper B. Hansen. 2014. Datanet, Individual Assignment 1.}
+
+\begin{document}
+
+\maketitle
+% \tableofcontents
+
+\section{Introduction}
+\label{sec:introduction}
+I will briefly go over the system and network setup used to perform the
+practical aspects discussed throughout the document. Having provided these one
+can reason the results of the measurements to be discussed later.
+
+\begin{multicols}{2}
+
+    \subsection{System Setup}
+    \label{sec:introduction|sub:system-setup}
+    The system used ran in the virtual machine environment VirtualBox (4.3.8).
+    \\\\
+    \begin{tabular}{ll}
+        {\bf OS / Kernel}   & Arch Linux \\
+        {\bf }              & 3.14.1-1-ARCH \\
+        {\bf Shell}         & /bin/zsh \\
+        {\bf User}          & casperbhansen \\
+        {\bf Hostname}      & arch \\
+    \end{tabular}
+    \\\\
+    All programs used were acquired through {\it pacman}, which is the
+    standard package manager for the Arch Linux distribution.
+    
+    \columnbreak
+
+    \subsection{Network Setup}
+    \label{sec:introduction|sub:network-setup}
+    The network was driven via the host computer, as a bridged connection,
+    through the host system running Mac OS 10.9.2.
+    \\\\
+    \begin{tabular}{ll}
+        {\bf Speed (Up/Down)}   & 2 Mbit / 20 Mbit \\
+        {\bf Connection}        & Wireless \\
+    \end{tabular}
+    \\\\
+    Because the connection is bridged, the test results should suffer little
+    impact. However, since the connection is wireless some loss of speed is
+    to be expected.
+
+\end{multicols}
+
+\section{Latency and Bandwidth}
+\label{sec:latency-and-bandwidth}
+By experimentation with tools like \prog{ping}, \prog{traceroute} and
+\prog{wget} on the chosen target network hosts and a discussion of the
+results we can attempt to draw a few conclusions.
+
+\subsection{Chosen Targets}
+\label{sec:latency-and-bandwidth|sub:chosen-targets}
+For convenience, I have listed the target network hosts that will be tested
+against. Each target is assigned a shorthand label for easy reference.
+\begin{center}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        {\bf Label}     & {\bf Location}    & {\bf URL} \\ \hline
+        AU  & Australia & {\tt http://ftp.au.debian.org/debian/} \\ \hline
+        JP  & Japan     & {\tt http://ftp.jp.debian.org/debian/} \\ \hline
+        DK  & Denmark   & {\tt http://ftp.dk.debian.org/debian/} \\ \hline
+        UK  & England   & {\tt http://ftp.uk.debian.org/debian/} \\ \hline
+        US  & America   & {\tt http://ftp.us.debian.org/debian/} \\ \hline
+    \end{tabular}
+\end{center}
+The targets were chosen with the intend of producing a variety of results. The
+tests were conducted in Denmark, making the Danish mirror the closest. England
+comes in second as it is relatively close to Denmark. For the remainder of the
+targets many factors can influence which is the fastest and slowest, so I
+won't be making any guesses --- these were selected for exactly this reason.
+
+\subsection{Ping}
+The \prog{ping} program sends out an ICMP\footnote{ICMP --- Acronym denoting
+{\it Internet Control Message Protocol}.} \code{ECHO\_REQUEST} datagram,
+consisting of an IP-address  ICMP header and a timeval structure[\prog{ping}
+manual page]. An \code{ECHO\_REQUEST} can be thought of as the {\it ``ping''}
+itself, which basically asks the target network host to send back an ICMP
+\code{ECHO\_REPLY}, also known as a {\it ``pong''}.
+
+\begin{figure}[H]
+    \center
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        {\bf Target} & {\bf Minimum} & {\bf Average} & {\bf Maximum} \\ \hline
+        DK & 31.649 ms & 33.972 ms & 36.685 ms \\ \hline
+        UK & 42.757 ms & 52.393 ms & 71.944 ms \\ \hline
+        US & 120.464 ms & 193.454 ms & 243.455 ms \\ \hline
+        JP & 350.175 ms & 391.000 ms & 434.614 ms \\ \hline
+        AU & 424.835 ms & 461.892 ms & 502.756 ms \\ \hline
+    \end{tabular}
+    \caption{Ping results}
+    \label{table:ping}
+\end{figure}
+
+The above table
+
+\section{HTTP Protocol}
+\label{sec:http-protocol}
+...
+
+% Single appendix
+%
+% \section*{APPENDIX}
+% \setcounter{section}{1}
+% ...
+
+% Multiple appendices
+%
+% \appendix
+% \section*{APPENDIX}
+% \section{First}
+% \section{Second}
+
+% \ack{}
+
+\bibliographystyle{ACM-Reference-Format-Journals}
+
+\begin{bottomstuff}
+% additional bottom stuff
+\end{bottomstuff}
+
+\end{document}
+

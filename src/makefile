@@ -1,6 +1,6 @@
 CXX=g++ -std=c++11 -Wall -pedantic
-LDFLAGS=-I/usr/include
-LIBS=-lncurses
+LDFLAGS=-I/usr/include -L/usr/lib
+LIBS=-lmagic
 PROJECT='Datanet'
 TARGET=Datanet
 
@@ -15,11 +15,11 @@ all: $(OBJ)
 	@$(CXX) $(LDFLAGS) $(LIBS) -c $< -o $@
 
 run:
-	./$(TARGET)
+	./$(TARGET) 8080 ~/Development/DN/src/www
 
 class:
 	./.cpp_class.sh $(NAME) $(PROJECT)
-	echo "Created $(NAME) class files"
+	echo "Created $(NAME) class"
 
 clean:
 	rm -rf *.o $(TARGET)

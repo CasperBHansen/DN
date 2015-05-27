@@ -1,0 +1,15 @@
+traceroute to ftp.uk.debian.org (83.142.228.128), 30 hops max, 60 byte packets
+ 1  * * *
+ 2  192.168.1.1 (192.168.1.1)  1.824 ms  2.944 ms  4.596 ms
+ 3  95.166.146.1 (95.166.146.1)  24.191 ms  24.116 ms  24.473 ms
+ 4  ae12.mr5.hoer.dk.ip.fullrate.dk (90.185.4.86)  24.849 ms  25.781 ms  26.401 ms
+ 5  ae7.mr1.vby.dk.ip.fullrate.dk (90.185.4.241)  27.511 ms  28.423 ms  28.335 ms
+ 6  ae6.mr1.fb.dk.ip.fullrate.dk (90.185.5.81)  29.200 ms  29.709 ms  28.692 ms
+ 7  xe-3-1-0-0.boanqp7.dk.ip.tdc.net (62.242.107.165)  26.933 ms  21.081 ms  22.540 ms
+ 8  ae1-0.alb2nqp7.dk.ip.tdc.net (83.88.21.83)  23.506 ms  23.866 ms  24.522 ms
+ 9  tinet.xe-3-3-0-0.alb2nqp7.dk.ip.tdc.net (195.215.109.102)  54.891 ms  54.351 ms  53.767 ms
+10  xe-11-0-2.lon11.ip4.tinet.net (141.136.107.245)  43.491 ms  43.140 ms  42.577 ms
+11  iomart-hosting-gw.ip4.tinet.net (77.67.74.102)  43.151 ms  43.349 ms  40.993 ms
+12  593.net1.north.dc5.as20860.net (62.233.127.174)  41.948 ms  41.663 ms  41.725 ms
+13  87.117.211.42 (87.117.211.42)  45.222 ms  43.913 ms  43.572 ms
+14  free.hands.com (83.142.228.128)  43.375 ms  43.934 ms  43.697 ms

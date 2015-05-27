@@ -1,0 +1,11 @@
+> wget http://mirrors.dotsrc.org/archlinux/iso/2014.05.01/archlinux-2014.05.01-dual.iso
+--2014-05-01 17:38:33-- http://mirrors.dotsrc.org/archlinux/iso/2014.05.01/archlinux-2014.05.01-dual.iso
+Resolving mirrors.dotsrc.org (mirrors.dotsrc.org)... 130.225.254.116, 2001:878:346::116
+Connecting to mirrors.dotsrc.org (mirrors.dotsrc.org)|130.225.254.116|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 565182464 (539M) [application/x-iso9660-image]
+Saving to: 'archlinux-2014.05.01-dual.iso'
+
+100%[===================================================================================>] 565,182,464 1.00MB/s   in 9m 20s
+
+2014-05-01 17:47:53 (986 KB/s) - 'archlinux-2014.05.01-dual.iso' save [565182464/565182464]

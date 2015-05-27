@@ -1,0 +1,18 @@
+traceroute to ftp.jp.debian.org (150.65.7.130), 30 hops max, 60 byte packets
+ 1  * * *
+ 2  192.168.1.1 (192.168.1.1)  1.993 ms  3.346 ms  3.231 ms
+ 3  95.166.146.1 (95.166.146.1)  67.411 ms  67.611 ms  67.727 ms
+ 4  ae12.mr5.hoer.dk.ip.fullrate.dk (90.185.4.86)  25.533 ms  25.434 ms  29.797 ms
+ 5  ae7.mr1.vby.dk.ip.fullrate.dk (90.185.4.241)  26.944 ms  39.368 ms  39.432 ms
+ 6  ae6.mr1.fb.dk.ip.fullrate.dk (90.185.5.81)  27.441 ms  27.675 ms  27.159 ms
+ 7  xe-3-0-0-0.boanqp7.dk.ip.tdc.net (195.215.109.229)  27.449 ms  21.171 ms  21.817 ms
+ 8  ae1-0.ldn4nqp1.uk.ip.tdc.net (83.88.22.7)  42.700 ms  41.755 ms  41.867 ms
+ 9  xe-7-3.r00.londen03.uk.bb.gin.ntt.net (83.231.199.245)  42.112 ms  42.254 ms  43.294 ms
+10  ae-2.r23.londen03.uk.bb.gin.ntt.net (129.250.4.133)  60.708 ms  60.943 ms  55.127 ms
+11  ae-3.r22.amstnl02.nl.bb.gin.ntt.net (129.250.5.198)  49.134 ms  49.347 ms  59.960 ms
+12  ae-3.r25.tokyjp05.jp.bb.gin.ntt.net (129.250.4.64)  338.152 ms  335.390 ms  335.485 ms
+13  ae-2.r01.tokyjp01.jp.bb.gin.ntt.net (129.250.3.243)  334.653 ms  333.867 ms  333.557 ms
+14  ge-0-7-0-18.r01.tokyjp01.jp.ce.gin.ntt.net (203.105.72.18)  331.837 ms  311.390 ms  320.438 ms
+15  ve-62.cisco2.komatsu.wide.ad.jp (203.178.136.242)  321.835 ms  328.035 ms  320.183 ms
+16  * * *
+17  ftp.jaist.ac.jp (150.65.7.130)  408.055 ms  407.620 ms  407.352 ms
